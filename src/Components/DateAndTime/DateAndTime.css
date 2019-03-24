@@ -1,0 +1,15 @@
+.dateandtime {
+    border-radius: 4px;
+    background: #428bca;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}

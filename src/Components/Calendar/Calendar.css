@@ -1,0 +1,7 @@
+.calendar {
+    flex: 1;
+    height: 50vh;
+    margin: 20px 10px;
+    background: #fff;
+    border-radius: 4px;
+}
