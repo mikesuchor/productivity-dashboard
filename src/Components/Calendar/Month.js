@@ -1,27 +1,26 @@
 import React from 'react'
 import './Month.css'
-
-const moment = require('moment')
+import dateFns from 'date-fns'
 
 class Month extends React.Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      currentMonth: moment().format('MMMM')
+      currentMonth: new Date()
     }
   }
 
   prevMonth = () => {
     this.setState({
-      currentMonth: moment().subtract(1, 'month')
-    })
+      currentMonth: dateFns.addMonths(this.state.currentMonth, 1)
+    });
   }
 
   nextMonth = () => {
     this.setState({
-      currentMonth: moment().add(1, 'month')
-    })
+      currentMonth: dateFns.subMonths(this.state.currentMonth, 1)
+    });
   }
 
   render() {

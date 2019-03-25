@@ -1,14 +1,13 @@
 import React from 'react'
 import './Date.css'
-
-const moment = require('moment')
+import dateFns from 'date-fns'
 
 class Date extends React.Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      currentDate: moment().format('D')
+      currentDate: new Date()
     }
   }
 
