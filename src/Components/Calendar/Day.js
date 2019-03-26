@@ -7,14 +7,14 @@ class Day extends React.Component {
     super(props)
     
     this.state = {
-      currentDay: new Date()
+      currentDay: ""
     }
   }
 
   render() {
     return (
       <div className="day">
-        {this.state.currentDay}
+      {this.state.currentDay}
       </div>
     );
   }
