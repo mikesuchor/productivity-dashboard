@@ -1,21 +1,20 @@
 import React from 'react'
 import './DateAndTime.css'
-
-const moment = require('moment')
+import dateFns from 'date-fns'
 
 class DateAndTime extends React.Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      currentDate: moment().format('MMMM D, YYYY'),
-      currentTime: moment().format('h:mm:ss a')
+      currentDate: new Date(),
+      currentTime: new Date()
     }
   }
 
   timeUpdate = () => {
     this.setState({
-        currentTime: moment().format('h:mm:ss a')
+        currentTime: dateFns.addSeconds(this.state.currentTime, 1)
     })
   }
 
@@ -26,8 +25,8 @@ class DateAndTime extends React.Component {
   render() {
     return (
       <div className="dateandtime">
-        <h2 className='currentDate'>{this.state.currentDate}</h2>
-        <h2 className='currentTime'>{this.state.currentTime}</h2>
+        <h2 className='currentDate'>{dateFns.format(this.state.currentDate, "MMMM D, YYYY")}</h2>
+        <h2 className='currentTime'>{dateFns.format(this.state.currentTime, "h:mm:ss a")}</h2>
       </div>
     );
   }
