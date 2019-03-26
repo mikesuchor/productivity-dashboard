@@ -1,7 +1,7 @@
 import React from 'react'
 import './Calendar.css'
-import Date from './Date'
 import Day from './Day'
+import DaysOfTheWeek from './DaysOfTheWeek'
 import Month from './Month'
 
 class Calendar extends React.Component {
@@ -16,8 +16,8 @@ class Calendar extends React.Component {
     return (
       <div className="calendar">
         <Month  />
-        <Day  />
-        <Date />
+        <DaysOfTheWeek  />
+        <Day />
       </div>
     );
   }
