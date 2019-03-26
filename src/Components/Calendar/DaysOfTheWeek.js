@@ -1,23 +1,23 @@
 import React from 'react'
-import './Date.css'
+import './DaysOfTheWeek.css'
 import dateFns from 'date-fns'
 
-class Date extends React.Component {
+class DaysOfTheWeek extends React.Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      currentDate: new Date()
+      currentDate: ""
     }
   }
 
   render() {
     return (
-      <div className="date">
+      <div className="daysoftheweek">
         {this.state.currentDate}
       </div>
     );
   }
 }
 
-export default Date
+export default DaysOfTheWeek
