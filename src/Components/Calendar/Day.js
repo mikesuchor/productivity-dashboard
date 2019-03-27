@@ -1,6 +1,5 @@
 import React from 'react'
 import './Day.css'
-import dateFns from 'date-fns'
 
 class Day extends React.Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class Day extends React.Component {
   render() {
     return (
       <div className="day">
-      {this.state.currentDay}
+        {this.state.currentDay}
       </div>
     );
   }

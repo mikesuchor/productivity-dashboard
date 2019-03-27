@@ -1,6 +1,5 @@
 import React from 'react'
 import './DaysOfTheWeek.css'
-import dateFns from 'date-fns'
 
 class DaysOfTheWeek extends React.Component {
   constructor(props) {
