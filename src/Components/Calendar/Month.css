@@ -1,11 +1,92 @@
 .month {
-    border-bottom: 2px solid #F7F7F7;
+    border-bottom: 2px solid var(--bg-color);
+    display: flex;
+    text-align: center;
 }
 
-.prevMonthBtn {
-
+.currentMonth {
+    width: 100%;
 }
 
-.nextMonthBtn {
-    
+.prevMonthBtn, .nextMonthBtn {
+    width: 30px;
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.daysOfTheWeek {
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid var(--bg-color);
+}
+
+.daysOfTheWeek-names {
+    flex: 1;
+}
+
+
+
+
+/* GENERAL */
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--bg-color);
+    position: relative;
+}
+
+/* GRID */
+
+.row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Calendar */
+
+.calendar .body .cell {
+  position: relative;
+  height: 5em;
+  border-right: 1px solid var(--border-color);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--neutral-color);
+  transition: 0.25s ease-out;
+}
+
+.calendar .body .cell:hover {
+  background: var(--bg-color);
+  transition: 0.5s ease-out;
+}
+
+.calendar .body .row {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.calendar .body .cell .number {
+  position: absolute;
+  font-size: 82.5%;
+  line-height: 1;
+  top: .75em;
+  right: .75em;
+  font-weight: 700;
+}
+
+.calendar .body .disabled {
+  color: var(--text-color-light);
+  pointer-events: none;
+}
+
+.calendar .body .col {
+  flex-grow: 0;
+  flex-basis: calc(100%/7);
+  width: calc(100%/7);
 }

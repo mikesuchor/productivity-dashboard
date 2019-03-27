@@ -6,7 +6,11 @@
     background: #fff;
 }
 
-.tasklist .header input {
+.taskform {
+  text-align: center;
+}
+
+.taskform input {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #FFF;
@@ -14,9 +18,10 @@
     margin: 20px;
     border-radius: 10px;
     outline: none;
+    text-align: left;
   }
     
-  .tasklist .header button {
+.taskform button {
     padding: 10px;
     font-size: 16px;
     margin: 10px;
@@ -28,19 +33,19 @@
     outline: none;
   }
   
-  .tasklist .header button:hover {
+.taskform button:hover {
     background-color: #2e6ca1;
     border: 2px solid #2e6ca1;
     cursor: pointer;
   }
   
-  .tasklist .tasks {
+.tasks {
     list-style: none;
     padding-left: 0;
     width: 250px;
   } 
   
-  .tasklist .tasks li {
+.tasks li {
     color: black;
     background-color: white;
     padding: 15px;
@@ -53,7 +58,7 @@
     padding: 0;
   }
   
-  .tasklist .tasks li {
+.tasks li {
     color: black;
     background-color: white;
     padding: 15px;
@@ -63,7 +68,7 @@
     transition: background-color .2s ease-out;
   }
     
-  .tasklist .tasks li:hover {
+.tasks li:hover {
     background-color: #428bca;
     cursor: pointer;
   }
