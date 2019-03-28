@@ -1,6 +1,6 @@
 .weather {
     margin-bottom: 20px;
     border-radius: 4px;
-    background: #fff;
+    background: var(--neutral-color);
     text-align: center;
 }

@@ -1,5 +1,5 @@
 .dashboard-container {
-    background: #F7F7F7;
+    background: var(--bg-color);
 }
 
 .dashboard {

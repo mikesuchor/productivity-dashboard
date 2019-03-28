@@ -1,7 +1,7 @@
 .dateandtime {
     border-radius: 4px;
-    background: #428bca;
-    color: #FFF;
+    background: var(--main-color);
+    color: var(--neutral-color);
     text-align: center;
     display: flex;
     flex-direction: column;

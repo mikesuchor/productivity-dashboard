@@ -2,6 +2,6 @@
     flex: 1;
     height: 50vh;
     margin: 20px 10px;
-    background: #fff;
+    background: var(--neutral-color);
     border-radius: 4px;
 }

@@ -1,5 +1,5 @@
 .header {
     display: flex;
     height: 50px;
-    background: white;
+    background: var(--neutral-color);
 }
