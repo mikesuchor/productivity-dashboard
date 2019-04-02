@@ -8,7 +8,8 @@ class Weather extends React.Component {
     this.state = {
       latitude: 0,
       longitude: 0,
-      weather: {}
+      weather: "",
+      temperature: ""
     }
   }
 
@@ -29,7 +30,8 @@ class Weather extends React.Component {
         this.setState({
           latitude,
           longitude,
-          weather: data
+          weather: data,
+          temperature: data.main.temp
         })
       })
   }
@@ -38,7 +40,9 @@ class Weather extends React.Component {
     return (
       <div className="weather">
         <h3>Weather</h3>
-        {console.log(this.state.weather.main.temp)}
+        <div className="weather-week">
+          <div>{`${Math.round(this.state.temperature)}°C`}</div>
+        </div>
       </div>
     );
   }

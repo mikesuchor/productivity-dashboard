@@ -4,3 +4,7 @@
     background: var(--neutral-color);
     text-align: center;
 }
+
+.weather-week {
+    display: flex;
+}
