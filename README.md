@@ -3,21 +3,20 @@
 A productivity dashboard, to help organize my day. Built with React, date-fns, and a temporary weather API (to be replaced with a better API).
 
 Features I want to add now:
-### Task List
+### Task List Component
 - [ ] Add more info to tasks (date created, date to be finished, alarm, finished toggle)
 - [ ] Improve look of tasks
-- [ ] 
 - [ ] Share state between Task List and Calendar to add tasks to Calendar
-### Calendar
+### Calendar Component
 - [ ] Highlight current day
 - [ ] Share state between Task List and Calendar to add tasks to Calendar
-### Weather
+### Weather Component
 - [ ] Find a better API to get weather for the whole week
 - [ ] Display 7 days with symbols / animated symbols and high/low temperatures
 - [ ] Add styling
-### Timer
+### Timer Component
 - [ ] Add time zones
-### General
+### General Component
 - [ ] Improve heights and widths of components
 - [ ] Create responsive design for mobile
 - [ ] Add different color themes
