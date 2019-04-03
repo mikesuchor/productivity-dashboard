@@ -1,4 +1,4 @@
-![My image](mikesuchor.github.com/productivity-dashboard/productivity-dashboard.png)
+![My image](productivity-dashboard.png)
 
 
 
