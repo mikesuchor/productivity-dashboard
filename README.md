@@ -2,7 +2,6 @@
 
 A productivity dashboard, to help organize my day. Built with React, date-fns, and a temporary weather API (to be replaced with a better API).
 
-Features I want to add now:
 ### Task List Component
 - [ ] Add more info to tasks (date created, date to be finished, alarm, finished toggle)
 - [ ] Improve look of tasks
@@ -16,13 +15,13 @@ Features I want to add now:
 - [ ] Add styling
 ### Timer Component
 - [ ] Add time zones
-### General Component
+### General
 - [ ] Improve heights and widths of components
 - [ ] Create responsive design for mobile
 - [ ] Add different color themes
 - [ ] Add a backend for saving of Tasks / Calendar
 
-Wish List:
+### Wish List:
 - [ ] Components which can be added/removed to make a customizable modular dashboard
 - [ ] Pre-built layouts (fitness dashboard (workout component, weight component...)) 
 
