@@ -1,5 +1,5 @@
 .month {
-    border-bottom: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--border-color);
     display: flex;
     text-align: center;
 }
@@ -17,29 +17,12 @@
 .daysOfTheWeek {
     display: flex;
     text-align: center;
-    border-bottom: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .daysOfTheWeek-names {
     flex: 1;
 }
-
-
-
-
-/* GENERAL */
-
-body {
-    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.5;
-    color: var(--text-color);
-    background: var(--bg-color);
-    position: relative;
-}
-
-/* GRID */
 
 .row {
   margin: 0;
@@ -52,26 +35,26 @@ body {
 
 /* Calendar */
 
-.calendar .body .cell {
+.cell {
   position: relative;
   height: 5em;
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid var(--bg-color);
   overflow: hidden;
   cursor: pointer;
   background: var(--neutral-color);
   transition: 0.25s ease-out;
 }
 
-.calendar .body .cell:hover {
+.cell:hover {
   background: var(--bg-color);
   transition: 0.5s ease-out;
 }
 
-.calendar .body .row {
-  border-bottom: 1px solid var(--border-color);
+.row {
+  border-bottom: 1px solid var(--bg-color);
 }
 
-.calendar .body .cell .number {
+.number {
   position: absolute;
   font-size: 82.5%;
   line-height: 1;
@@ -80,12 +63,12 @@ body {
   font-weight: 700;
 }
 
-.calendar .body .disabled {
+.disabled {
   color: var(--text-color-light);
   pointer-events: none;
 }
 
-.calendar .body .col {
+.col {
   flex-grow: 0;
   flex-basis: calc(100%/7);
   width: calc(100%/7);
