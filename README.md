@@ -1,3 +1,7 @@
+![My image](mikesuchor.github.com/productivity-dashboard/productivity-dashboard.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
