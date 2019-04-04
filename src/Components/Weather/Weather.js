@@ -1,4 +1,5 @@
 import React from 'react'
+import WeatherDay from './WeatherDay'
 import './Weather.css'
 
 class Weather extends React.Component {
@@ -8,8 +9,7 @@ class Weather extends React.Component {
     this.state = {
       latitude: 0,
       longitude: 0,
-      weather: "",
-      temperature: ""
+      weather: ""
     }
   }
 
@@ -22,16 +22,15 @@ class Weather extends React.Component {
   }
 
   getWeatherData(latitude, longitude) {
-    const weatherapi = "https://fcc-weather-api.glitch.me/api/current?"
+    const weatherapi = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/4324ecbb9cad582bab9e7a19209570f6/"
 
-    fetch(`${weatherapi}lat=${latitude}&lon=${longitude}`)
+    fetch(`${weatherapi}${latitude},${longitude}?units=auto`)
       .then(response => response.json())
       .then(data => {
         this.setState({
           latitude,
           longitude,
-          weather: data,
-          temperature: data.main.temp
+          weather: data
         })
       })
   }
@@ -39,12 +38,22 @@ class Weather extends React.Component {
   render() {
     return (
       <div className="weather">
-        <h3>Weather</h3>
-        <div className="weather-week">
-          <div>{`${Math.round(this.state.temperature)}°C`}</div>
-        </div>
+          <h3>Weather</h3>
+          {this.state.weather
+            ? <div className="weather-week">
+                {console.log(this.state.weather)}
+                <WeatherDay day="1" weather={this.state.weather} />
+                <WeatherDay day="2" weather={this.state.weather} />
+                <WeatherDay day="3" weather={this.state.weather} />
+                <WeatherDay day="4" weather={this.state.weather} />
+                <WeatherDay day="5" weather={this.state.weather} />
+                <WeatherDay day="6" weather={this.state.weather} />
+                <WeatherDay day="7" weather={this.state.weather} />
+              </div>
+            : null
+          }
       </div>
-    );
+    )
   }
 }
 
