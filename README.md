@@ -10,7 +10,7 @@ A productivity dashboard, to help organize my day. Built with React, date-fns, a
 - [ ] Highlight current day
 - [ ] Share state between Task List and Calendar to add tasks to Calendar
 ### Weather Component
-- [ ] Find a better API to get weather for the whole week
+- [x] Find a better API to get weather for the whole week
 - [ ] Display 7 days with symbols / animated symbols and high/low temperatures
 - [ ] Add styling
 ### Timer Component
