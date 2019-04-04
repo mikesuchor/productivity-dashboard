@@ -8,3 +8,7 @@
 .weather-week {
     display: flex;
 }
+
+.weather-week div {
+    flex: 1;
+}
