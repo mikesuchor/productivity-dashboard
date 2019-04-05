@@ -1,5 +1,6 @@
 import React from 'react'
 import './TaskList.css'
+import dateFns from 'date-fns'
 
 class Tasks extends React.Component {
   constructor(props) {
@@ -16,9 +17,13 @@ class Tasks extends React.Component {
 
   createTasks = (item) => {
     return (
-      <li onClick={() => this.delete(item.key)} key={item.key}>
-          {item.text}
-          <i class="far fa-trash-alt"></i>
+      <li>
+          <h4>{item.text}</h4>
+          <p>{dateFns.format(new Date(), "MMMM D, YYYY")}</p>
+          {/* <i class="far fa-calendar-alt"></i> */}
+          <div>
+            <i className="far fa-trash-alt" onClick={() => this.delete(item.key)} key={item.key}></i>
+          </div>
       </li>
     )
   }
