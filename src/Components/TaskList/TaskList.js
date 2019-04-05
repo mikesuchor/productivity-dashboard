@@ -46,7 +46,7 @@ class TaskList extends React.Component {
     return (
       <div className='tasklist'>
         <div className='taskform'>
-          <h3>Task List</h3>
+          <h3 className='taskheader'>Task List</h3>
           <form onSubmit={this.addItem}>
             <input ref={(input) => this._inputElement = input}
               placeholder='enter task'>

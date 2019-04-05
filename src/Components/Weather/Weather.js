@@ -38,7 +38,7 @@ class Weather extends React.Component {
   render() {
     return (
       <div className="weather">
-          <h3>Weather</h3>
+          <h3 className="weatherheader">Weather</h3>
           {this.state.weather
             ? <div className="weather-week">
                 {console.log(this.state.weather)}
