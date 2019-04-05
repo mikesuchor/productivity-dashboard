@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+.weatherheader {
+    border-bottom: 2px solid var(--text-color-light);
+    line-height: 35px;
+}
+
 .weather-week {
     display: flex;
 }
