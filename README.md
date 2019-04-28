@@ -1,10 +1,10 @@
 ![Dashboard Preview](productivity-dashboard.png)
 
-A productivity dashboard, to help organize my day. Built with React, date-fns, and a temporary weather API (to be replaced with a better API).
+A productivity dashboard, to help organize my day. Built with React, date-fns, and Dark Sky weather API.
 
 ### Task List Component
 - [ ] Add more info to tasks (date created, date to be finished, alarm, finished toggle)
-- [ ] Improve look of tasks
+- [x] Improve look of tasks
 - [ ] Share state between Task List and Calendar to add tasks to Calendar
 ### Calendar Component
 - [ ] Highlight current day
