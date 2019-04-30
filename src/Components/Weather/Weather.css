@@ -1,8 +1,9 @@
 .weather {
-    margin-bottom: 20px;
     border-radius: 4px;
     background: var(--neutral-color);
     text-align: center;
+    box-shadow: 3px 3px 6px #555;
+    margin: 10px;
 }
 
 .weatherheader {

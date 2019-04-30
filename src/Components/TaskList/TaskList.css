@@ -1,9 +1,9 @@
 .tasklist {
     flex: 1;
-    height: 57vh;
-    margin: 20px 10px;
     border-radius: 4px;
-    background: var(--neutral-color);
+    background: #fff;
+    box-shadow: 3px 3px 6px #555;
+    margin: 10px;
 }
 
 .taskform {

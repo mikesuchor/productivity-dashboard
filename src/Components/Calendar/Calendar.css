@@ -1,7 +1,7 @@
 .calendar {
     flex: 1;
-    height: 50vh;
-    margin: 20px 10px;
     background: var(--neutral-color);
     border-radius: 4px;
+    box-shadow: 3px 3px 6px #555;
+    margin: 10px;
 }
