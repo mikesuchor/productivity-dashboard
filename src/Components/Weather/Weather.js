@@ -1,6 +1,7 @@
 import React from 'react'
 import WeatherDay from './WeatherDay'
 import './Weather.css'
+import 'weather-icons/css/weather-icons.css'
 
 class Weather extends React.Component {
   constructor(props) {
@@ -36,19 +37,21 @@ class Weather extends React.Component {
   }
   
   render() {
+
     return (
       <div className="weather">
+      
           <h3 className="weatherheader">Weather</h3>
           {this.state.weather
             ? <div className="weather-week">
-                {console.log(this.state.weather)}
+                {console.log(this.state.weather.daily.data)}
+                <WeatherDay day="0" weather={this.state.weather} />
                 <WeatherDay day="1" weather={this.state.weather} />
                 <WeatherDay day="2" weather={this.state.weather} />
                 <WeatherDay day="3" weather={this.state.weather} />
                 <WeatherDay day="4" weather={this.state.weather} />
                 <WeatherDay day="5" weather={this.state.weather} />
                 <WeatherDay day="6" weather={this.state.weather} />
-                <WeatherDay day="7" weather={this.state.weather} />
               </div>
             : null
           }
