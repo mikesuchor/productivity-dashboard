@@ -2,9 +2,9 @@
     height: 10vh;
     line-height: 10vh;
     color: black;
-    background: white;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 3px 6px #555;
+    background: var(--neutral-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 3px 6px var(--text-color);
     text-align: center;
 }
 
