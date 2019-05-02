@@ -1,0 +1,21 @@
+.weather_day {
+    border-right: 1px solid #eee;
+}
+
+.weather_day .temperatures {
+    font-size: 1.25vw;
+    margin: 1vh;
+}
+
+.wi {
+    font-size: 2.5vw;
+    margin: 2vh 0;
+}
+
+.temphigh {
+    color: var(--hot-color);
+}
+
+.templow {
+    color: var(--cold-color);
+}
