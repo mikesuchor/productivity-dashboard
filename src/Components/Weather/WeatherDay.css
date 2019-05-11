@@ -3,13 +3,14 @@
 }
 
 .weather_day .temperatures {
-    font-size: 1.25vw;
+    font-size: 1vw;
     margin: 1vh;
 }
 
 .wi {
-    font-size: 2.5vw;
+    font-size: 2.25vw;
     margin: 2vh 0;
+    color: var(--text-color);
 }
 
 .temphigh {

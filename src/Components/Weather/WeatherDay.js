@@ -11,7 +11,7 @@ class WeatherDay extends React.Component {
                     return("wi wi-night-clear")
                 case "partly-cloudy-day":
                     return("wi wi-day-cloudy")
-                case "partly cloudy-night":
+                case "partly-cloudy-night":
                     return("wi wi-night-alt-cloudy")
                 case "cloudy":
                     return("wi wi-cloudy")

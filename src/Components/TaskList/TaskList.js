@@ -45,17 +45,12 @@ class TaskList extends React.Component {
   render() {
     return (
       <div className='task_list'>
-        <div className='task_form'>
           <h3 className='task_header'>Task List</h3>
-          <form onSubmit={this.addItem}>
-            <input ref={(input) => this._inputElement = input}
-              placeholder='Enter Task'>
-            </input>
+          <form className='task_form' onSubmit={this.addItem}>
+            <input ref={(input) => this._inputElement = input} placeholder='Enter Task'></input>
             <button type='submit'>Add Task</button>
           </form>
-        </div>
-        <Tasks entries={this.state.items}
-                  delete={this.deleteItem}/>
+        <Tasks entries={this.state.items} delete={this.deleteItem}/>
       </div>
     )
   }
